@@ -10,7 +10,7 @@ function correctWord(sum) {
         case '13':
         case '14':
             end = 'ей';
-            return (alert(`Ваша сумма в ${sum} рубл${end} успешно зачислена.`));
+            return `Ваша сумма в ${sum} рубл${end} успешно зачислена.`;
     }
 
     switch (sum.charAt(sum.length - 1)) {
@@ -21,18 +21,18 @@ function correctWord(sum) {
         case '8':
         case '9':
             end = 'ей';
-            return (alert(`Ваша сумма в ${sum} рубл${end} успешно зачислена.`));
+            return `Ваша сумма в ${sum} рубл${end} успешно зачислена.`;
 
         case '1':
             end = 'ь';
-            return (alert(`Ваша сумма в ${sum} рубл${end} успешно зачислена.`));
+            return `Ваша сумма в ${sum} рубл${end} успешно зачислена.`;
 
         case '2':
         case '3':
         case '4':
             end = 'я';
-            return (alert(`Ваша сумма в ${sum} рубл${end} успешно зачислена.`));
+            return `Ваша сумма в ${sum} рубл${end} успешно зачислена.`;
     }
 }
 
-correctWord();
+alert(correctWord());
