@@ -33,6 +33,9 @@ let productsWithPhoto = products.filter(
 );
 console.log(productsWithPhoto);
 
+//Вариант от преподавателя (Игоря Кубикова)
+// element => 'photos' in element && element.photos.length > 0;
+
 //Сортируем все товары по цене, от низкой к высокой
 products.sort((a, b) => a.price - b.price);
 console.log(products);
