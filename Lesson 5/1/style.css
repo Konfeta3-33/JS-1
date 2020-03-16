@@ -1,0 +1,21 @@
+.main {
+    margin: 0 auto;
+    width: 900px;
+}
+
+button {
+    margin: 20px;
+    display: block;
+}
+
+.modal {
+    width: 400px;
+    min-height: 200px;
+    background-color: pink;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
