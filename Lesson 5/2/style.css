@@ -1,0 +1,33 @@
+.container {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product {
+    width: 200px;
+    background-color: #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+.productName {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.desc {
+    margin-bottom: 10px;
+}
+
+img {
+    margin-bottom: 10px;
+}
+
+.hide {
+    display: none;
+}
