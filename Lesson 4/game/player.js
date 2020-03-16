@@ -14,12 +14,12 @@ const player = {
      *@param {{x: int, y: int}} nextPoint - следующая точка пользователя
      */
     move(nextPoint) {
-        if (nextPoint.x >= 0 && nextPoint.y >= 0 && nextPoint.x < 10 && nextPoint.y < 10) {
+        // if (nextPoint.x >= 0 && nextPoint.y >= 0 && nextPoint.x < config.colsCount && nextPoint.y < config.rowsCount) {
             this.x = nextPoint.x;
             this.y = nextPoint.y;
-        } else {
-            this.x = player.x;
-            this.y = player.y;
-        }
+        // } else {
+            // this.x = player.x;
+            // this.y = player.y;
+        // }
     }
 }

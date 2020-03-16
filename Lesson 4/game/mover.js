@@ -2,6 +2,18 @@
 
 let mover = {
     /**
+     * Проверяет может ли пользователь перейти на точку
+     * @param {{x: int, y: int}} nextPoint Точка, которую проверяем
+     * @returns {boolean} true если пользователь может перейти на точку, false если нет
+     */
+    canPlayerMakeStep(nextPoint) {
+        return nextPoint.x >= 0 &&
+                nextPoint.x < config.colsCount &&
+                nextPoint.y >= 0 &&
+                nextPoint.y < config.rowsCount;
+    },
+    
+    /**
      * Получает и отдает правление от пользователя
      * @returns {int} Возвращает правление, введенное пользователем
      */

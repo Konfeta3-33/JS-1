@@ -12,9 +12,11 @@ let game = {
                 return;
             }
             const nextPoint = mover.getNextPosition(direction);
-            renderer.clear();
-            player.move(nextPoint);
-            renderer.render();
+            if (mover.canPlayerMakeStep(nextPoint)) { //Вариант от преподавателя
+                renderer.clear();
+                player.move(nextPoint);
+                renderer.render();
+            }
         }
     },
 
