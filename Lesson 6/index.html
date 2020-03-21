@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="packages/styles/slider.css" /> -->
+    <!-- <link rel="stylesheet" href="packages/fontawesome-free-5.12.1-web/css/all.css"> -->
+    <link type="text/css" rel="stylesheet" href="packages/lightgallery.js-master/dist/css/lightgallery.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home work 6</title>
+  </head>
+  <body>
+    <div class="slider" id="lightgallery">
+      <div class="slider-item" data-src="https://placeimg.com/640/480/nature">
+        <img src="https://placeimg.com/640/480/nature" alt="slider-item" />
+      </div>
+      <div class="slider-item" data-src="https://placeimg.com/640/480/tech">
+        <img src="https://placeimg.com/640/480/tech" alt="slider-item" />
+      </div>
+      <div class="slider-item" data-src="https://placeimg.com/640/480/animals">
+        <img src="https://placeimg.com/640/480/animals" alt="slider-item" />
+      </div>
+    </div>
+    <script src="packages/lightgallery.js-master/dist/js/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.getElementById('lightgallery'), {
+            mode: "lg-slide",
+            selector: '.slider-item',
+        });
+    </script>
+    <!-- <script src="packages/scripts/slider.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,17 @@
+body {
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider-item img {
+    width: 300px;
+}
+
+.slider-item:not(:last-child) {
+    margin-right: 10px;
+}
