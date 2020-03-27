@@ -67,15 +67,11 @@ function deleteFromCartHandleClick(event) {
 }
 
 function getSum() {
-    let allProductsInCart = table.querySelectorAll('tr');
-    let sumOfAllProducts = 0;
-    
-    for (let i = 0; i < allProductsInCart.length; i++) {
-        let sumOfOneProduct = Number(allProductsInCart[i].dataset.price) * Number(allProductsInCart[i].dataset.quantity);
-        sumOfAllProducts += sumOfOneProduct;
-    }
-    
-    return sumOfAllProducts;
+    const allProductsInCart = Array.from(table.querySelectorAll('tr'));
+    return allProductsInCart.reduce(function(accumulator, row) {
+        const currentProductSum = Number(row.dataset.price) * Number(row.dataset.quantity);
+        return accumulator + currentProductSum;
+    }, 0)
 }
 
 function updateTotalSum(product) {
